@@ -10,5 +10,7 @@ import com.vgipl.Modal.RopeTypeMaster;
  *
  */
 public interface RopeTypeService {
+
+	RopeTypeMaster saveRope(RopeTypeMaster rope);
 // public RopeTypeMaster saveRopeMaster (RopeTypeMaster rope);
 }
