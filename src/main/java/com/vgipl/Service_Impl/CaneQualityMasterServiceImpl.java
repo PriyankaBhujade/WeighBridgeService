@@ -3,6 +3,8 @@
  */
 package com.vgipl.Service_Impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -41,6 +43,13 @@ public class CaneQualityMasterServiceImpl implements CaneQualityMasterService {
 		caneQualityMaster.setMacAddress(macAddress);
 		// irrigationMaster.setEnterDate(EnterDate);
 		return caneQualityRepository.save(caneQualityMaster);
+	}
+
+	@Override
+	public List<CaneQualityMaster> getAllRecords() {
+		// TODO Auto-generated method stub
+		List<CaneQualityMaster> caneTypeMasters = caneQualityRepository.getAllRecords();
+		return caneTypeMasters;
 	}
 
 }
