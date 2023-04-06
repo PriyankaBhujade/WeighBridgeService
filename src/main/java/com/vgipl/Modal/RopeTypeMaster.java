@@ -5,6 +5,7 @@ package com.vgipl.Modal;
 
 import javax.persistence.Entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,8 +19,11 @@ import lombok.Setter;
 @Entity
 @Setter
 @Getter
-@NoArgsConstructor
-
+/*
+ * @NoArgsConstructor
+ * 
+ * @AllArgsConstructor
+ */
 public class RopeTypeMaster {
 
 }
