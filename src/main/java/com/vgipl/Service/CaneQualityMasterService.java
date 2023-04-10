@@ -16,4 +16,11 @@ public interface CaneQualityMasterService {
 	CaneQualityMaster saveRecord(CaneQualityMaster caneQualityMaster);
 
 	List<CaneQualityMaster> getAllRecords();
+	
+	CaneQualityMaster getRecordById(Integer id);
+
+	
+	CaneQualityMaster updateRecord(Integer id, CaneQualityMaster caneTypeMaster);
+
+	CaneQualityMaster deleteRecordById(Integer id);
 }

@@ -20,6 +20,8 @@ public interface CaneQualityRepository extends JpaRepository<CaneQualityMaster, 
 	@Query(value = "select max(QUALITY_ID) from CANE_QUALITY_MST", nativeQuery = true)
 	Integer getMaxId();
 	
-	@Query(value = "select c.* from CANE_QUALITY_MST", nativeQuery = true)
+	@Query(value = "select c.* from CANE_QUALITY_MST c where c.DELETE_FLAG = 'N'", nativeQuery = true)
 	List<CaneQualityMaster> getAllRecords();
+
+	//List<CaneQualityMaster> findbyDeleteFlag(String string);
 }
