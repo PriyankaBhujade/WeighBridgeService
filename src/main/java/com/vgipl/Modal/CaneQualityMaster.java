@@ -73,5 +73,8 @@ public class CaneQualityMaster {
 	@Column(name = "QUALITY_FLAG")
 	private String qualityFlag;
 	
+	@Column(name = "DELETE_FLAG")
+	private String deleteFlag;
+	
 	
 }
