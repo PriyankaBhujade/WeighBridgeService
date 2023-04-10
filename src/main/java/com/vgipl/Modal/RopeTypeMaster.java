@@ -7,14 +7,14 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
-import lombok.AllArgsConstructor;
+
 import lombok.Getter;
-import lombok.NoArgsConstructor;
+
 import lombok.Setter;
 
 
@@ -33,9 +33,10 @@ import lombok.Setter;
  */
 @Table(name = "ROPE_TYPE_MAST")
 public class RopeTypeMaster {
+	
+//	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-	@Column(name = "ROPE_ID")
+	@Column(name = "ROPE_ID" ,nullable = false)
 	private Integer ropeId;
 	
 	@Column(name = "ROPE_NAME")
@@ -44,8 +45,8 @@ public class RopeTypeMaster {
 	@Column(name = "ROPE_CODE")
 	private String ropeCode;
 	
-	@Column(name = "STATUS")
-	private String status;
+	//@Column(name = "STATUS")
+	//private String status;
 	
 	@Column(name = "USER_ID")
 	private Integer userId;
@@ -68,6 +69,7 @@ public class RopeTypeMaster {
 	@Column(name = "IP_ADDRESS")
 	private String ipAdress;
 	
-	
+	@Column(name = "Delete_flag")
+	private String deleteFlag;
 
 }

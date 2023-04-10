@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.vgipl.core_erp.bo;
+package com.vgipl.bo;
 
 import org.springframework.http.HttpStatus;
 

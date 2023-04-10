@@ -1,7 +1,9 @@
 /**
  * 
  */
-package com.vgipl.core_erp.bo;
+package com.vgipl.bo;
+
+
 
 /**
  * @author ashwini.shebe
@@ -40,6 +42,10 @@ public interface Constants {
 //	User Master Constants
 	static String UserNameAlreadyPresent = "User Name Already Present";
 	static String DataNotProcess = "Data Not Process";
+	
+// RopeTypeMaster
+	
+	static String VehiclePriorityAlreadyPresent = "Vehicle Wise Priority Already Set";
 	
 
 }

@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.vgipl.Config.RequestController;
 import com.vgipl.Modal.CaneQualityMaster;
 import com.vgipl.Service.CaneQualityMasterService;
-import com.vgipl.core_erp.Config.RequestController;
-import com.vgipl.core_erp.bo.Constants;
-import com.vgipl.core_erp.bo.RequestResponse;
+import com.vgipl.bo.Constants;
+import com.vgipl.bo.RequestResponse;
 
 
 /**

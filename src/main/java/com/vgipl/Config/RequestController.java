@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.vgipl.core_erp.Config;
+package com.vgipl.Config;
 
 /**
  * @author ashwini.shebe
@@ -10,7 +10,7 @@ package com.vgipl.core_erp.Config;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import com.vgipl.core_erp.bo.RequestResponse;
+import com.vgipl.bo.RequestResponse;
 
 
 
