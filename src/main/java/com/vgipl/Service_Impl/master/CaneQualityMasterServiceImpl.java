@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.vgipl.Service_Impl;
+package com.vgipl.Service_Impl.master;
 
 import java.util.Date;
 import java.util.List;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 import com.vgipl.Modal.CaneQualityMaster;
 import com.vgipl.Repository.CaneQualityRepository;
-import com.vgipl.Service.CaneQualityMasterService;
+import com.vgipl.Service.master.CaneQualityMasterService;
 
 /**
  * @author Pratiksha.hatekar

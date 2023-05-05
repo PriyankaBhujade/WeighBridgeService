@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.vgipl.Controller;
+package com.vgipl.Controller.master;
 
 import java.util.List;
 
@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.vgipl.Config.RequestController;
 import com.vgipl.Exception.ApplicationException;
 import com.vgipl.Modal.RopeTypeMaster;
-import com.vgipl.Service.RopeTypeService;
+import com.vgipl.Service.master.RopeTypeService;
 import com.vgipl.bo.Constants;
 import com.vgipl.bo.RequestResponse;
 

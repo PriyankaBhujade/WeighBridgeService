@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.vgipl.Service_Impl;
+package com.vgipl.Service_Impl.master;
 
 import java.util.Date;
 import java.util.List;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import com.vgipl.Exception.ApplicationException;
 import com.vgipl.Modal.RopeTypeMaster;
 import com.vgipl.Repository.RopeTypeRepository;
-import com.vgipl.Service.RopeTypeService;
+import com.vgipl.Service.master.RopeTypeService;
 import com.vgipl.bo.Constants;
 
 

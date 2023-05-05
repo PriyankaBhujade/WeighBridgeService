@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.vgipl.Service;
+package com.vgipl.Service.master;
 
 import java.util.List;
 
