@@ -42,9 +42,10 @@ public class RopeTypeServiceImpl implements RopeTypeService{
 		rope.setIpAdress(ipAdress);
 		rope.setMacAdress(macAdress);
 		rope.setDeleteFlag("N");
-		List<RopeTypeMaster> findByVehicleIdAndPriority = ropeType.findByVehicleIdAndPriority(rope.getVehicleId(), rope.getPriority());
-		System.out.println("Find :"+findByVehicleIdAndPriority);
-		if(!findByVehicleIdAndPriority.isEmpty()) {
+		List<RopeTypeMaster> findByVehicleIdAndPriorityAndDeleteFlag = ropeType.findByVehicleIdAndPriorityAndDeleteFlag(rope.getVehicleId(), rope.getPriority(),rope.getDeleteFlag());
+		
+		System.out.println("Find :"+findByVehicleIdAndPriorityAndDeleteFlag);
+		if(!findByVehicleIdAndPriorityAndDeleteFlag.isEmpty()) {
 			throw new ApplicationException(Constants.AlreadyPresentErrorCode, Constants.VehiclePriorityAlreadyPresent);
 //			System.out.println("\"Find :\"+findByVehicleIdAndPriority\"Find :\"+findByVehicleIdAndPriority");
 		}

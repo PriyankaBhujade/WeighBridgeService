@@ -17,6 +17,9 @@ public interface RopeTypeRepository extends JpaRepository<RopeTypeMaster, Intege
 	List<RopeTypeMaster> findByDeleteFlag(String string);
 
 	List<RopeTypeMaster> findByVehicleIdAndPriority(Integer vehicleId, Integer priority);
+
+	List<RopeTypeMaster> findByVehicleIdAndPriorityAndDeleteFlag(Integer vehicleId, Integer priority,
+			String string);
 	
 	//@Query(value = "select v.* from ROPE_TYPE_MAST v where v.DELETE_FLAG = 'N'", nativeQuery = true)
 //	List<RopeTypeMaster> getAllRecordsRope();
